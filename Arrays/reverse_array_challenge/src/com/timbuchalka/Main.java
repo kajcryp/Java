@@ -27,8 +27,11 @@ public class Main {
                 int temp = array[i]; // inside loop we want to swap two elements so we need to create a temporary variable
                                      // since array starts with index starting with position o, swap element from index 0
                                      // with element from last index.
+                    
                 array[i] = array[maxIndex -i];
-                array[maxIndex - i] = temp; // in temp we're moving first variable in array to the last index
+                    
+                array[maxIndex - i] = temp; // in temp we're moving first variable in array to the last index as we're
+                                            // setting the last index as the temp so in this case becomes 1 instead of 15
 
 
             }
