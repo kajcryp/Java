@@ -22,24 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c817859e-1b63-423f-abdc-b3a76ab7a958" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/timbuchalka/timbuchalka.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Composition_challenge/Composition_challenge.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Composition_challenge/src/house/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Composition_challenge/src/house/desk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Composition_challenge/src/house/wall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Encapsulation/Encapsulation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Encapsulation/src/EncapsulationKaj/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Encapsulation/src/EncapsulationKaj/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/timbuchalka/PC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/timbuchalka/PC.java" afterDir="false" />
-    </list>
+    <list default="true" id="c817859e-1b63-423f-abdc-b3a76ab7a958" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

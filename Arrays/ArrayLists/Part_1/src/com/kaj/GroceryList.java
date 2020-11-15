@@ -28,4 +28,16 @@ public class GroceryList {
         String theItem = groceryList.get(position);
         groceryList.remove(position);
     }
+
+    // finding an item from the grocery list
+    public String findItem(String searchItem){
+        boolean exists = groceryList.contains(searchItem); // select the name of the list and returns true if item is found
+        int position = groceryList.indexOf(searchItem); // returns the index position of the array list in that item
+        if (position >=0) {
+            return groceryList.get(position);
+        } else {
+            return null;
+        }
+
+    }
 }
