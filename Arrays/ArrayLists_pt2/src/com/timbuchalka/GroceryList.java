@@ -18,14 +18,29 @@ public class GroceryList {
             System.out.println((i+1) + ". " + groceryList.get(i));
         }
     }
-    
 
-    public void modifyGroceryItem(int position, String newItem) {
+    //arrays part 3
+    public void modifyGroceryItemTwo(String currentItem, String newItem){
+        int position = findItemTwo(currentItem); // checking if the current item exists and if so it'll be changed to new item
+        if(position >= 0){
+            modifyGroceryItem(position, newItem);
+        }
+    }
+
+    private void modifyGroceryItem(int position, String newItem) {
         groceryList.set(position, newItem);
         System.out.println("Grocery item " + (position+1) + " has been modified.");
     }
 
-    public void removeGroceryItem(int position) {
+    //arrays part 3
+    public void removeGroceryItem(String item){
+        int position = findItemTwo(item);
+        if(position >= 0){
+            removeGroceryItem(position); // referencing method below
+        }
+    }
+    //Arrays part 2
+    private void removeGroceryItem(int position) {
         String theItem = groceryList.get(position);
         groceryList.remove(position);
     }
@@ -39,5 +54,11 @@ public class GroceryList {
         }
 
         return null;
+    }
+
+    //arrays part 3
+    public int findItemTwo(String searchItem) {
+        return groceryList.get(searchItem);
+
     }
 }

@@ -59,14 +59,39 @@ public class Main {
 
     public static void modifyItem() {
         System.out.print("Enter item number: ");
+
         int itemNo = scanner.nextInt();
+
         scanner.nextLine();
         System.out.print("Enter replacement item: ");
         String newItem = scanner.nextLine();
         groceryList.modifyGroceryItem(itemNo-1, newItem);
     }
 
+    public static void modifyItemtwo() {
+        System.out.print("Enter item number: ");
+        String itemNo = scanner.nextLine();
+        scanner.nextLine();
+        System.out.print("Enter replacement item: ");
+        String newItem = scanner.nextLine();
+        groceryList.modifyGroceryItemTwo(itemNo-1, newItem);
+    }
+
     public static void removeItem() {
+        System.out.print("Enter item number: ");
+        String itemNo = scanner.nextLine();
+        groceryList.removeGroceryItem(itemNo);
+
+    }
+
+    public static void removeItemTwo() {
+        System.out.print("Enter item name: ");
+        int itemNo = scanner.nextInt();
+        groceryList.removeGroceryItem(itemNo-1);
+
+    }
+
+    public static void removeItemTwo() {
         System.out.print("Enter item number: ");
         int itemNo = scanner.nextInt();
         scanner.nextLine();
