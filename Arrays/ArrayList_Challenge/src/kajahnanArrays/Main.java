@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     private static Scanner newInput = new Scanner(System.in);
-    private static MobilePhone onePlus = new MobilePhone(myNumber);
     private static String myNumber = "07718909539";
+    private static MobilePhone onePlus = new MobilePhone(myNumber);
+
 
     public static void main (String[] args){
 
@@ -14,38 +15,38 @@ public class Main {
         printSelection();
         printContacts();
 
-        while(!quit){
+        while(!quit) {
             System.out.println("Enter your action: ");
             int action = newInput.nextInt();
             newInput.nextLine();
 
-            switch (action)
+            switch (action) {
             case 0:
                 endPhone();
                 break;
             case 1:
-                onePlus.printContact();
+                printContacts();
                 break;
             case 2:
-                onePlus.addContact();
+                addContact();
                 break;
             case 3:
-                onePlus.updateContact()
+                updateContact();
                 break;
             case 4:
-                onePlus.removeContact();
+                removeContact();
                 break;
             case 5:
-                onePlus.queryContact();
+                queryContact();
                 break;
             case 6:
                 printSelection();
                 break;
-
+            }
         }
     }
 
-    public static void addContact(){
+    private static void addContact(){
         System.out.println("Enter a new contact name: ");
         String name = newInput.nextLine();
         System.out.println("Enter a new phone number: ");
@@ -55,20 +56,72 @@ public class Main {
                                                                     // and we want to do this to create a new contact record without having to create a new contact class
                                                                     // without having an instance or an object to call upon
         if(onePlus.addContact(newContact)){
-            System.out.println("New contract added: " + name + " phone number" + number);
+            System.out.println("New contract added: " + name + " and their phone number is: " + number);
         } else {
             System.out.println("Cannot add: " + name + " as name already on list of contacts");
         }
 
+        printSelection();
     }
 
-    public static void updateContact() {
+    private static void updateContact() {
         System.out.println("Enter a new contact name: ");
         String name = newInput.nextLine();
-        System.out.println("Enter a new phone number: ");
-        String number = newInput.nextLine();
-        Contacts oldContact =
+        Contacts existingContactRecord = onePlus.queryContact(name);
+        if(existingContactRecord == null) {
+            System.out.println("Contact is not found");
+            return;
+        }
+
+        System.out.println("Enter a new name: ");
+        String newName = newInput.nextLine();
+        System.out.println("Enter new phone number: ");
+        String newPhoneNumber = newInput.nextLine();
+
+        Contacts newContactRecord = Contacts.createContact(newName, newPhoneNumber);
+        if(onePlus.updateContact(existingContactRecord, newContactRecord)){             //using if statement as updateContact() returns a boolean
+            System.out.println("Successfully added contact: " + newContactRecord.getName());
+        } else {
+            System.out.println("New contact: " + newContactRecord.getName() + " could not added");
+        };
+
+        printSelection();
     }
+
+    private static void removeContact() {
+        System.out.println("Enter a new contact name: ");
+        String name = newInput.nextLine();
+        Contacts existingContactRecord = onePlus.queryContact(name);
+        if (existingContactRecord == null) {
+            System.out.println("Contact is not found");
+            return;
+        }
+
+       //Contacts removedContact = onePlus.queryContact(name);
+       if(onePlus.removeContact(existingContactRecord)){
+           System.out.println("Successfully removed contact: " + existingContactRecord.getName());
+       } else{
+           System.out.println("New contact: " +existingContactRecord.getName() + " could not removed");
+       }
+
+        printSelection();
+
+    }
+
+    private static void queryContact() {
+        System.out.println("Enter a new contact name: ");
+        String name = newInput.nextLine();
+        Contacts queriedContactRecord = onePlus.queryContact(name);
+        if (queriedContactRecord == null) {
+            System.out.println("Contact is not found");
+            return;
+        }
+
+        System.out.println("Contact: " + queriedContactRecord.getName() + " exists and their phone number is: " + queriedContactRecord.getPhoneNumber());
+
+        printSelection();
+    }
+
 
     public static void startPhone(){
         System.out.println("Starting phone ...");
@@ -91,8 +144,9 @@ public class Main {
         System.out.println("Choose your action");
     }
 
-    public void printContacts(){
+    public static void printContacts(){
         onePlus.printContact();
+        printSelection();
     }
 
 }

@@ -33,25 +33,29 @@ public class MobilePhone {
     }
 
     public boolean updateContact(Contacts oldContact, Contacts newContact){
-        int foundPosition = findContact(oldContact);
-        if(foundPosition > 0) {
-            this.mycontacts.set(foundPosition, newContact)
+        int foundPosition = findContact(oldContact.getName());
+        if(foundPosition >= 0) {
+            this.mycontacts.set(foundPosition, newContact);
             System.out.println(oldContact.getName() + "is being replaced with new contact " + newContact.getName());
             return true;
 
-        }   else {
+        }
             System.out.println(oldContact.getName() + "was not found.");
             return false;
-        }
+
     }
 
     private int findContact(Contacts searchedContact){
         int position = mycontacts.indexOf(searchedContact); //returns an integer showing element position of that the contact is in the array
-        if(position >=0) {
+/*        if(position >=0) {
             return mycontacts.get(position);
         } else {
-
+            System.out.print("Can't find contact");
         }
+*/
+
+        return position;  // since method is int, we need to return an int value which is why commented out code above was removed as method failed
+
     }
 
     private int findContact(String contactName) { //loop through all the records and extract the name out and compare that with name passed
@@ -67,18 +71,25 @@ public class MobilePhone {
     }
 
     public String queryContact(Contacts contact) {
-        if(findContact(contact)>0) {
+        int queriedContact = findContact(contact);
+        if(queriedContact >=0){
             return contact.getName();
         }
+        System.out.println("couldn't find name");
         return null;
     }
 
-    public Contacts queryContact(String name){
-        
+    public Contacts queryContact(String name){ //return contact record
+    int position = findContact(name); // getting position number based on name
+    if (position >= 0) {
+        return mycontacts.get(position);   //if position number does exist, it returns the entry from the arraylist which is a contact record
+       }
+
+    return null;
     }
 
     public boolean removeContact(Contacts contact){
-        int position = findContact(contact);
+        int position = findContact(contact.getName());
         if(position >=0) {
             mycontacts.remove(position);
             System.out.println(contact.getName() + "Contact was  removed");
