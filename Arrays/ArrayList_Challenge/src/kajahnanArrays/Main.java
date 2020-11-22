@@ -74,6 +74,7 @@ public class Main {
         }
 
         System.out.println("Enter a new name: ");
+
         String newName = newInput.nextLine();
         System.out.println("Enter new phone number: ");
         String newPhoneNumber = newInput.nextLine();

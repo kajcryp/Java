@@ -30,7 +30,8 @@ public class Main {
                     addItem();
                     break;
                 case 3:
-                    modifyItem();
+                    modify
+                Item();
                     break;
                 case 4:
                     removeItem();
