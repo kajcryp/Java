@@ -18,10 +18,11 @@ public class Branches {
     }
 
     private int findCustomer2 (Customer searchedCustomer){
+
         return BranchCustomers.indexOf(searchedCustomer);
     }
 
-    public boolean addNewCustomer(Customer newCustomer){
+    public boolean addNewCustomer(Customer newCustomer, Double transactionAmount){
         if(findCustomer1(newCustomer.getName()) >=0){
           System.out.println("Customer already there in Branch");
           return false;
@@ -29,14 +30,18 @@ public class Branches {
 
         System.out.println("Customer is not in the branch");
         BranchCustomers.add(newCustomer);
+        newCustomer.Transactions.add(transactionAmount);
         return true;
 
     }
 
-    public Transaction addTransaction(int newTransaction){
-        Customer.Tr
-        CustomerTransactions.add(newTransaction);
-        System.out.println
+    public void addTransaction(Customer searchedCustomer, Double newTransaction){
+
+        if(findCustomer2(searchedCustomer) >=0){
+            searchedCustomer.Transactions.add(newTransaction);
+            System.out.println("Contact is there. The person's new transaction of " + newTransaction + " has been added");
+        }
+        addNewCustomer(searchedCustomer, newTransaction);
     }
 
 }
