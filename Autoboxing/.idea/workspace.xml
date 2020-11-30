@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="42514555-9bce-4951-9a4a-aa095a80ce2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Autoboxing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/Branches.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/Customers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Autoboxing_Unboxing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Challenge/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Challenge/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Challenge/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/Autoboxing_Unboxing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/out/production/Autoboxing_Unboxing/kajahnan/IntClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/out/production/Autoboxing_Unboxing/kajahnan/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autoboxing_Unboxing/Tutorial/src/kajahnan/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/Composition.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/Case.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/Dimensions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/Monitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/Motherboard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/PC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/Resolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition/src/com/timbuchalka/timbuchalka.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/Composition_challenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/out/production/Composition_challenge/house/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/out/production/Composition_challenge/house/bed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/out/production/Composition_challenge/house/ceiling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/out/production/Composition_challenge/house/desk.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/out/production/Composition_challenge/house/singleRoom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/out/production/Composition_challenge/house/wall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/src/house/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/src/house/bed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/src/house/ceiling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/src/house/desk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/src/house/singleRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Composition_challenge/src/house/wall.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1l0PJCBmuXBVtomDc48FoAKh075" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42514555-9bce-4951-9a4a-aa095a80ce2e" name="Default Changelist" comment="" />
+      <created>1606730964867</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606730964867</updated>
+    </task>
+    <servers />
+  </component>
+</project>
