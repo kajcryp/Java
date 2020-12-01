@@ -3,6 +3,7 @@ package LinkedListTutorial;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.Scanner;
 
 public class Demo {
     public static void main(String[] args) {
@@ -23,6 +24,24 @@ public class Demo {
         placesToVisit.remove(4);
         printList(placesToVisit);
 
+        LinkedList<String> placesToVisit2 = new LinkedList<String>();
+
+        addInOrder(placesToVisit2, "Sydney");
+        addInOrder(placesToVisit2, "Melbourne");
+        addInOrder(placesToVisit2, "Adelaide");
+        addInOrder(placesToVisit2, "Perth");
+        addInOrder(placesToVisit2, "Canberra");
+        addInOrder(placesToVisit2, "Brisbane");
+        addInOrder(placesToVisit2, "Darwin");
+
+        printList(placesToVisit2);
+
+        addInOrder(placesToVisit2, "Alice Springs");
+        addInOrder(placesToVisit2, "Sydney");
+
+        printList(placesToVisit2);
+
+        visit(placesToVisit2);
     }
 
     private static void printList(LinkedList<String> linkedList){
@@ -72,6 +91,77 @@ public class Demo {
 
         stringListIterator.add(newCity);
         return true;
+    }
+
+    private static void visit(LinkedList cities){
+        Scanner newInput = new Scanner(System.in);
+        boolean quit = false;
+        boolean goingForward = true;
+        ListIterator<String> ListIterator = cities.listIterator(); // since cities is a linked list, you can use method listIterator as it's part of that class
+
+        if (cities.isEmpty()){
+            System.out.println("No cities in itenerary");
+            return;
+        } else {
+            System.out.println("Now visiting " + ListIterator.next());
+            printMenu();
+        }
+
+        while (!quit){
+            int action = newInput.nextInt();
+            newInput.nextLine();
+
+            switch (action){
+                case 0:
+                    System.out.println("Holiday is over");
+                    quit = true;
+                    break;
+
+                case 1:
+                    if(!goingForward){      //if user has selected to go forwards and we're currently not going forward. We check to see if there's an entry we can go forward to
+                        if(ListIterator.hasNext()){
+                            ListIterator.next();
+                        }
+                        goingForward = true;
+                    }
+                    if(ListIterator.hasNext()){
+                        System.out.println("Now visiting " + ListIterator.next());
+                    } else{
+                        System.out.println("Reached the end of the list");
+                        goingForward = false; // reached end of list so no where else to go forward to
+                    }
+                    break;
+
+                case 2:
+                    if(goingForward){
+                        if(ListIterator.hasPrevious()){
+                            ListIterator.previous();
+                        }
+                        goingForward = false;
+                    }
+                    if(ListIterator.hasPrevious()){
+                        System.out.println("Now visiting " + ListIterator.previous());
+                    } else {
+                        System.out.println("We are at the start of the List");
+                        goingForward = true;   // only direction we can go now
+                    }
+                    break;
+
+                case 3:
+                    printMenu();
+                    break;
+            }
+
+        }
+
+    }
+
+    private static void printMenu(){
+        System.out.println("Available actions:\npress ");
+        System.out.println("0 - to qquit\n" +
+                           "1 - go to next city\n" +
+                           "2 - go to previous city\n" +
+                           "3 - Print menu options" );
     }
 
 
