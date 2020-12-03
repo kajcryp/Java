@@ -23,7 +23,7 @@ public class DeskPhone implements ITelephone { // This line provides an error me
     public void answer() {
         if(isRinging){
             System.out.println("Answering the desk phone");
-            isRinging = false
+            isRinging = false;
         }
     }
 

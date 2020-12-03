@@ -11,8 +11,15 @@ public class Main {
         timsPhone = new DeskPhone(12321321);
 
         timsPhone.powerOn();
-        timsPhone.callPhone(074555675);
+        timsPhone.callPhone(12321321);
         timsPhone.answer();
+
+        ITelephone MikelsPhone;
+
+        MikelsPhone = new MobilePhone(89983322);
+        MikelsPhone.powerOn();
+        MikelsPhone.callPhone(89983322);
+        MikelsPhone.answer();
 
     }
 
