@@ -2,6 +2,7 @@ package Notes;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class IteratorNotes {
 
@@ -60,6 +61,9 @@ public class IteratorNotes {
         String StringingIt = StringHere2.next();
 
         System.out.println(StringingIt);
+
+        ListIterator<>;
+        //
     }
 
 

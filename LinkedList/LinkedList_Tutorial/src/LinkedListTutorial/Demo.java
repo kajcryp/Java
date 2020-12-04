@@ -96,7 +96,9 @@ public class Demo {
     private static void visit(LinkedList cities){
         Scanner newInput = new Scanner(System.in);
         boolean quit = false;
+        // we do this if we want to exit the menu options and so set it to false
         boolean goingForward = true;
+        //This is used to track the direction of linkedlist. So when we're going forward or backwards, we need to do a test to check the direction
         ListIterator<String> ListIterator = cities.listIterator(); // since cities is a linked list, you can use method listIterator as it's part of that class
 
         if (cities.isEmpty()){

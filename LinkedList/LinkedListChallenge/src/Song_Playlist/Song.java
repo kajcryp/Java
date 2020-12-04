@@ -13,15 +13,9 @@ public class Song {
         return Title;
     }
 
-    public void setTitle(String title) {
-        Title = title;
+    public String toString(){
+        return "Song title: " + Title + ":" + " song duration " + Duration;
     }
 
-    public double getDuration() {
-        return Duration;
-    }
 
-    public void setDuration(double duration) {
-        Duration = duration;
-    }
 }
