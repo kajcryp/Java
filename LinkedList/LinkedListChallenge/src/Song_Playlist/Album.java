@@ -52,9 +52,19 @@ public class Album {
 
     public boolean addToPlaylistTrackNo(int trackNumber, LinkedList<Song> Playlist){
         int index = trackNumber - 1;                            //internally arraylist, counting starts form 0 so -1.
+        ListIterator<Song> playlistIterator = Playlist.listIterator();
         if((index >= 0) && (index < this.AlbumSongs.size())){        //Checking the song in the entry.
-            Playlist.add(this.AlbumSongs.get(index));
-            return true;
+            String checkedSongTitle = this.AlbumSongs.get(index).getTitle();
+            for(int x = 0; x < Playlist.size(); x++){
+                String PlaylistSong = Playlist.get(x).getTitle();
+                if(checkedSongTitle.equals(PlaylistSong)){
+                    System.out.println("Song is already in the playlist");
+                }
+                Playlist.add(this.AlbumSongs.get(index));
+                System.out.println("Song " + Playlist.get(index).getTitle() + " will be added to playlist.");
+                return true;
+            }
+
         }
         System.out.println("This album does not have a track " + trackNumber);
         return false;

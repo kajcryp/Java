@@ -8,6 +8,7 @@ public class MobilePhone implements ITelephone { // This line provides an error 
 
 
     public MobilePhone(int myNumber) {
+
         this.myNumber = myNumber;
     }
 

@@ -73,6 +73,9 @@ public class PlayList {
 
 
     private static void play(LinkedList<Song> Playlist){
+        System.out.println("Add a number to correspond to following menu options: ");
+        printMenuOptions();
+
         Scanner newInput = new Scanner(System.in);
         boolean Quit = false;
         boolean isGoingForward = true;
