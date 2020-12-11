@@ -15,6 +15,24 @@ public class Main {
         PitsburgSteelers.addPlayer(Pat);
         PitsburgSteelers.addPlayer(Beckham);
 
+        Team<SoccerPlayer> Arsenal = new Team<>("Arsenal");
+//        Arsenal.addPlayer(Pat);
+//        Arsenal.addPlayer(Joe);    Don't work as Arsenal is assigned as a soccer team so can only add soccer players because of the <T>
+        Arsenal.addPlayer(Beckham);
+
+        Team<BaseballPlayer> NewYorkYankees = new Team<>("New York Yankees");
+        NewYorkYankees.addPlayer(Pat);
+
+        //So type parameter T can bring through any type apart from primitive types such as ints.
+
+        Team<String> brokenTeam = new Team<>("This won't work");
+        brokenTeam.addPlayer("no-one");
+        //problem here is the cast in the addPlayer method. When we want to run this, we get an exception to the thread error
+        //We need ability to restrict the type that can be provided for this T argument
+        //Good thing though is that Java also provides the mechanism for restricting the types that can be used as type arguments and I call this bounded type parameters
+        //By using those you can provide them with an upper bound 
+
+
         System.out.println(PitsburgSteelers.numberOfPlayers());
         // Problem is these are different types of players added to the same team. We need to try and add football players to football teams etc
         // One way of doing is creating 3 different team classes but that is duplicating code and is inefficient

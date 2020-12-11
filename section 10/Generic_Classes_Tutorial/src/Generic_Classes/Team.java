@@ -2,7 +2,14 @@ package Generic_Classes;
 
 import java.util.ArrayList;
 
-public class Team {
+public class Team<T> { //We put a Diamond with a T in the middle
+    // We're modifying class declaration to include a type parameter by adding the <>
+    // How it works is when we share a class,
+    // The T will be automatically replaced by Java with class we're using with real type when instantiating class
+    // This is why Array List and method using ArrayList changed types to T
+
+    // Since T isn't known until we instantiate a class, in other words run time,
+    // there's no way for Java to know of object of type T really does have a get Name method
 
     private String name;
     int played = 0;
@@ -10,7 +17,9 @@ public class Team {
     int lost = 0;
     int tied = 0;
 
-    private ArrayList<Player> members = new ArrayList<>();
+    private ArrayList<T> members = new ArrayList<>();
+    //By modifying class declaration we modify ArrayList type with T so it works with any form of player
+    //T was previously Player
 
     public Team(String name) {
         this.name = name;
@@ -33,13 +42,15 @@ public class Team {
 //
 //    }
 
-    public boolean addPlayer(Player newPlayer){
+    public boolean addPlayer(T newPlayer){ //Adding typed parameter again for addPlayer Method
+        Player castPlayer = (Player) newPlayer;
+        //Casting T New player to a Player type so that you can get the name
         if(members.contains(newPlayer)){
-            System.out.println(newPlayer.getName() + " is already part of the team");
+            System.out.println(castPlayer.getName() + " is already part of the team");
             return false;
         } else {
             members.add(newPlayer);
-            System.out.println(newPlayer.getName() + " has been added to the team " + this.name);
+            System.out.println(castPlayer.getName() + " has been added to the team " + this.name);
             return true;
         }
     }
