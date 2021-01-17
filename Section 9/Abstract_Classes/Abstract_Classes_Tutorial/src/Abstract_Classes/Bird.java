@@ -1,6 +1,6 @@
 package Abstract_Classes;
-
 public abstract class Bird extends Animal implements canFly{
+
 
     public Bird(String name) {
         super(name);

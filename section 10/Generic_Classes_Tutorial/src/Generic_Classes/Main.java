@@ -25,12 +25,15 @@ public class Main {
 
         //So type parameter T can bring through any type apart from primitive types such as ints.
 
-        Team<String> brokenTeam = new Team<>("This won't work");
-        brokenTeam.addPlayer("no-one");
+    //    Team<String> brokenTeam = new Team<>("This won't work"); //when we add T extends Player in Team class, it should produce error or red line under string
+    //    brokenTeam.addPlayer("no-one");
         //problem here is the cast in the addPlayer method. When we want to run this, we get an exception to the thread error
         //We need ability to restrict the type that can be provided for this T argument
         //Good thing though is that Java also provides the mechanism for restricting the types that can be used as type arguments and I call this bounded type parameters
-        //By using those you can provide them with an upper bound 
+        //By using those you can provide them with an upper bound
+
+        Team<FootballPlayer> NFL = new Team<>("NFL");
+        NFL.addPlayer(Joe);
 
 
         System.out.println(PitsburgSteelers.numberOfPlayers());
@@ -38,6 +41,15 @@ public class Main {
         // One way of doing is creating 3 different team classes but that is duplicating code and is inefficient
         // Another way is extend team type to have private classes in Team, but if you do that you need to implement functionality that's unique to each team type
         // fortunately Java has generics and enables us to specify a type
+
+        Team<SoccerPlayer> Liverpool = new Team<>("Liverpool");
+        Team<SoccerPlayer> Tottenham = new Team<>("Tottenham");
+
+        Arsenal.matchResult(Liverpool, 5,3);
+        Arsenal.matchResult(Tottenham, 5,5);
+     //   Arsenal.matchResult(NFL, 3, 2); - this works which is wrong as NFL is a different type. what you need to do is specify the team tyoe in the method with <T>.
+
+
 
     }
 
